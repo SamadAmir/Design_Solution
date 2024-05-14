@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 5%;
+            padding: 5%;
+            margin-right: 20%;
+            min-height: 70vh;
+            min-width: 60%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .pic {
+            min-width: 50%;
+            background-color: #e3f5f7;
+        }
+        .sign-in {
+            min-width: 80%;
+            border-radius: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .heading {
+            margin-top: 30px;
+            text-align: center;
+        }
+        form {
+            margin: 5%;
+        }
+        .inputs input {
+            width: 70%;
+            padding: 10px 10px 10px 40px; /* Adjust padding for icon space */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+        .inputs p {
+            padding-bottom: 3px;
+        }
+        .input-name {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTJjMi43NjggMCA1LTMuMDIyIDUtNlMxNC43NjggMCAxMiAwIDcgMy4wMjIgNyA2czIuMjMyIDYgNSA2em0wIDJjLTQuMzIgMC0xMiAyLjE2NS0xMiA2djJjMCAuNTUyLjQ0OCAxIDEtMWgxMThjLjU1MiAwIDEtLjQ0OCAxLTF2LTJjMC0zLjgzNS03LjY4LTYtMTItNnoiLz48L3N2Zz4='); /* User icon */
+        }
+        .input-email {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgNEg1Yy0xLjY2NyAwLTMgMS4zMzMtMyAzdjEwYzAgMS42NjcgMS4zMzMgMyAzIDNoMTRjMS42NjcgMCAzLTEuMzMzIDMtM1Y3YzAtMS42NjctMS4zMzMtMy0zLTN6bTAgMmwtNyA0LTctNFY3bDcgNGw3LTR2MXoiLz48L3N2Zz4='); /* Email icon */
+        }
+        .input-password {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTJjMS42NjcgMCAzLTEuMzMzIDMtM1Y3YzAtMS42NjctMS4zMzMtMy0zLTNTOSAxLjMzMyA5IDN2Mi41NzJoMXYtMi41N0MxMCAzLjcwMyAxMC43MDMgMyAxMS41IDNTMTMgMy43MDMgMTMgNHYxLjM1N0gxMi41UzExLjcwMyA1IDEyLjUgNXY0eiBNOSAxNmMwLTEuMTE5Ljg4MS0yIDIuMDE5LTIuMDE5TDEyIDExYy0xLjEwMyAwLTEuOTgxLjk4MS0yLjAxOSAyTDMgMTJ2OGMwIC42MTkuMzgwIDEuMTUxIDguMDE5IDUuMDE5UjkgMjAiIGZpbGw9IiMyRkJERCIvPjwvc3ZnPg=='); /* Password icon */
+        }
+
+        #btn {
+            background-color: #316633;
+            text-align: center;
+            margin-top: 5%;
+            padding: 10px;
+            cursor: pointer;
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            color: white;
+        }
+        #btn:hover {
+            background-color: #426744;
+            transition: 0.8s;
+        }
+        .social{
+            margin-left: 30%;
+            padding: 3px;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin-right: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="ss.png" alt="ss" width="432" height="600">
+        </div>
+        <div class="sign-in">
+            <div class="heading">
+                <img src="heading.png">
+                <h2>Create Account</h2>
+            </div>
+            <form>
+                <div class="inputs">
+                    <p>Full name</p>
+                    <input type="text" placeholder="Enter Full Name" class="input-name">
+                    <p>Email</p>
+                    <input type="email" placeholder="Enter Your Email" class="input-email">
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter Your Password" class="input-password">
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="btn">Sign Up</button>
+                </div>
+                <p style="margin-left: 35%;color: #afafaf;">- OR -</p>
+                <div class="social">
+                 <!-- Not making that much svgs so kindly bare icons can't export css too -->
+                 <img src="google.png" style="margin-right: 20px;" width="25" height="25">
+                 <img src="face.png" style="margin-right: 20px;" width="25" height="25">
+                 <img src="apple.png" width="25" height="25">
+                </div>
+
+                <div class="footer">
+                    Already have an account?&nbsp;&nbsp;&nbsp;
+                    <a href="Signup.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
